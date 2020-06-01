@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LabelConstant } from "../shared/constants/label-constant";
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  public LABELS = { ...LabelConstant.APP_LABELS.MENU };
 
   constructor() { }
 

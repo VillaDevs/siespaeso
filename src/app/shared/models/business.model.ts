@@ -3,7 +3,7 @@ export interface BusinessModel {
     name: string;
     address: string;
     opening_time: string;
-    closing_time: boolean;
+    closing_time: string;
     description: string;
     location: any;
     image: string;
