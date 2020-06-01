@@ -8,11 +8,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
-})
+});
 
 export class AppComponent implements OnInit {
-  public selectedIndex = 0;
-  public appPages = [
+  private selectedIndex = 0;
+  private appPages = [
     {
       title: 'Inicio',
       url: '',
@@ -42,4 +42,4 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
   }
-}
+};

@@ -17,6 +17,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 
 // environment
 import { environment } from '../environments/environment';
+import {  BusinessService } from "./shared/services/business.service";
 
 
 @NgModule({
@@ -34,8 +35,10 @@ import { environment } from '../environments/environment';
   providers: [
     StatusBar,
     SplashScreen,
+    BusinessService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

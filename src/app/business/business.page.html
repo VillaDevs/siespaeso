@@ -7,5 +7,18 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-card *ngFor="let business of business">
+        <img src="{{ business.image }}" />
+        <ion-card-header>
+          <ion-card-subtitle>{{ business.address  }}</ion-card-subtitle>
+          <ion-card-title>{{ business.name }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ business.description }}
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>
